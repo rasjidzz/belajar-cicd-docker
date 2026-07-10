@@ -23,7 +23,7 @@ jobs:
         run: flake8 app.py --max-line-length=120
 
   Test:
-    needs: lint
+    # needs: lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
